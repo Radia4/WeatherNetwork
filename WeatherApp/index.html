@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Network</title>
+</head>
+<body>
+    <!-- Card container for the weather app interface -->
+    <div class="card">
+
+        <!-- Search bar for users to input city names -->
+        <div class="search">
+            <!-- Input field for city names, with spellcheck disabled -->
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <!-- Button with an image icon to initiate the search -->
+            <button><img src="WeatherAppImages/Search.png"></button>
+        </div>
+
+        <!-- Error message section displayed for invalid city names -->
+        <div class="error">
+            <p>
+                Invalid city name
+            </p>
+        </div>
+
+        <!-- Weather information display section -->
+        <div class="weather">
+            <!-- Weather icon for current weather conditions (e.g., rain) -->
+            <img src="WeatherAppImages/Rain.png" class="weather-icon">
+            <!-- Current temperature displayed -->
+            <h1 class="temp">22°c</h1>
+            <!-- City name displayed -->
+            <h2 class="city">Calgary</h2>
+
+            <!-- Container for additional weather details like humidity and wind -->
+            <div class="details">
+                <div class="col">
+                    <img src="WeatherAppImages/humid.png">
+                    <div class="text-container">
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                
+                <!-- Wind details -->
+                <div class="col">
+                    <img src="WeatherAppImages/wind.png">
+                    <div class="text-container">
+                        <p class="wind">15 km/hr</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Link to the external JavaScript file -->
+            <script src="Javascript.js"></script>
+</body>
+</html>

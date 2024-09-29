@@ -1,0 +1,123 @@
+/* Global settings for margins, padding, font family, and box-sizing */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body background color */
+body {
+    background: #050821;
+}
+
+/* Main card container with gradient background, padding, and centered alignment */
+.card{
+    width: 80%;  
+    max-width: 470px;  
+    background: linear-gradient(0deg, rgba(100,150,255,1) 0%, rgba(145,206,237,1) 100%);
+    color: #fff;
+    margin: 100px auto 0;  
+    border-radius: 20px;
+    padding: 30px 35px 30px;
+    text-align: center;  
+}
+
+/* Styling for the search container */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+/* Input field styling */
+.search input {
+    border: 0;  
+    outline: 0;  
+    background: #ebfffc;  
+    color: #555;  
+    padding: 10px 25px;  
+    height: 60px;
+    border-radius: 30px;  
+    flex: 1;  
+    margin-right: 16px; 
+    font-size: 18px;
+}
+
+/* Styling for the search button */
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;  
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    cursor: pointer;  
+}
+
+/* Image inside the search button */
+.search button img {
+    width: 16px;  
+}
+
+/* Weather icon styling */
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+/* Temperature text styling (for larger text display) */
+.weather-h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+/* City name text styling */
+.weather-h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+/* Container for additional weather details */
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+/* Column styling for individual weather details (humidity/wind) */
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+/* Icon inside the weather details columns */
+.col img{
+    width: 40px; 
+    margin-right: 10px;  
+}
+
+/* Styling for humidity and wind text */
+.humidity, .wind {
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+/* Initially hide the weather details section */
+.weather{
+    display: none;
+}
+
+/* Error message styling */
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;  
+    margin-top: 10px;
+    display: none; 
+}
